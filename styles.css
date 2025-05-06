@@ -121,6 +121,14 @@ nav a:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
 .date {
     color: #666;
     font-size: 0.9rem;
@@ -143,6 +151,23 @@ nav a:hover {
 
 .about h2 {
     margin-bottom: 2rem;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
 }
 
 /* Team Section */
@@ -172,6 +197,14 @@ nav a:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.team-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
@@ -180,13 +213,12 @@ nav a:hover {
     text-align: center;
 }
 
-.contact-info {
-    margin-top: 2rem;
-}
-
-.contact-info a {
-    color: #3498db;
-    text-decoration: none;
+.contact-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin: 2rem 0;
 }
 
 /* Footer */
