@@ -4,127 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ventureline Foods</title>
+    <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="container header-container">
             <div class="logo">Ventureline Foods</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Crafting the Future of Food</h1>
-            <p>At Ventureline Foods, we blend innovation with tradition to create sustainable, delicious solutions for tomorrow's world.</p>
-            <div class="cta-buttons">
-                <a href="#about" class="btn">Learn More</a>
-                <a href="#contact" class="btn">Contact Us</a>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="container">
+            <h1>Revolutionizing Food Distribution</h1>
+            <p>We're building the future of food distribution with innovative technology and sustainable practices.</p>
+            <img src="images/hero-bg.jpg" alt="Food Distribution" class="hero-image">
+        </div>
+    </section>
 
-        <section id="news" class="news">
-            <h2>Latest News</h2>
+    <section class="news" id="news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
             <div class="news-grid">
-                <article>
-                    <img src="images/news-1.jpg" alt="Sustainable Product Line" class="news-image">
-                    <h3>Ventureline Launches New Sustainable Product Line</h3>
-                    <p class="date">May 3, 2025</p>
-                    <p>Our latest innovation combines flavor with environmental consciousness, setting new industry standards.</p>
-                    <a href="#" class="read-more">Read more</a>
+                <article class="news-item">
+                    <img src="images/news-1.jpg" alt="News 1" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">March 15, 2024</div>
+                        <h3 class="news-title">Expanding to New Markets</h3>
+                        <p class="news-excerpt">We're excited to announce our expansion into new regional markets...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
                 </article>
-                <article>
-                    <img src="images/news-2.jpg" alt="Partnerships" class="news-image">
-                    <h3>Expanding Our Partnerships Across North America</h3>
-                    <p class="date">April 24, 2025</p>
-                    <p>Ventureline Foods announces strategic collaborations with leading distributors and retailers.</p>
-                    <a href="#" class="read-more">Read more</a>
+                <article class="news-item">
+                    <img src="images/news-2.jpg" alt="News 2" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">February 28, 2024</div>
+                        <h3 class="news-title">Sustainable Practices</h3>
+                        <p class="news-excerpt">Our commitment to sustainability continues with new initiatives...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
                 </article>
-                <article>
-                    <img src="images/news-3.jpg" alt="Carbon Neutrality" class="news-image">
-                    <h3>Ventureline's Commitment to Carbon Neutrality</h3>
-                    <p class="date">April 10, 2025</p>
-                    <p>Our roadmap to achieving carbon neutrality by 2028 through innovative production methods.</p>
-                    <a href="#" class="read-more">Read more</a>
+                <article class="news-item">
+                    <img src="images/news-3.jpg" alt="News 3" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">February 10, 2024</div>
+                        <h3 class="news-title">Technology Innovation</h3>
+                        <p class="news-excerpt">Introducing our new AI-powered distribution optimization system...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
                 </article>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <h2>About Ventureline Foods</h2>
-            <p>Founded with a vision to revolutionize the food industry, Ventureline Foods combines cutting-edge technology with sustainable practices to create innovative food solutions. We believe in responsible sourcing, environmental stewardship, and delivering exceptional quality.</p>
-            <p>Our mission is to nourish communities while preserving the planet for future generations. Through continuous research and development, we strive to set new standards in the industry and make positive impacts on global food systems.</p>
-            <img src="images/team-meeting.jpg" alt="Ventureline Team Meeting" class="about-image">
-        </section>
-
-        <section id="team" class="team">
-            <h2>Our Leadership</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/henry-zhang.jpg" alt="Henry Zhang" class="team-image">
-                    <h3>Henry Zhang</h3>
-                    <p>Chief Executive Officer</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/alan-an.jpg" alt="Alan An" class="team-image">
-                    <h3>Alan An</h3>
-                    <p>Chief Technology Officer</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/chaos-zhang.jpg" alt="Chaos Zhang" class="team-image">
-                    <h3>Chaos Zhang</h3>
-                    <p>Chief Information Security Officer</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/kow-wang.jpg" alt="Kow Wang" class="team-image">
-                    <h3>Kow Wang</h3>
-                    <p>Head of Security</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Get in Touch</h2>
-            <p>Interested in partnering with us or learning more about our products? Reach out to our team using the contact information below or send us a direct email.</p>
-            <img src="images/office.jpg" alt="Ventureline Foods Office" class="contact-image">
-            <div class="contact-info">
-                <p>Email: <a href="mailto:contact@venturelinefoods.com">contact@venturelinefoods.com</a></p>
-                <p>Phone: +1 (408) 730-7500</p>
-                <p>Address: 909 Kifer Rd<br>Sunnyvale, CA 94086</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Ventureline Foods</h3>
-                <p>Crafting the future of food with innovation and sustainability.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p><a href="mailto:contact@venturelinefoods.com">contact@venturelinefoods.com</a></p>
-                <p>+1 (408) 730-7500</p>
-                <p>909 Kifer Rd<br>Sunnyvale, CA 94086</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Ventureline Foods. All rights reserved.</p>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>Ventureline Foods is a leading food distribution company that combines cutting-edge technology with sustainable practices to revolutionize the way food reaches consumers. Our mission is to create a more efficient, transparent, and environmentally conscious food supply chain.</p>
+                <p>With a focus on innovation and customer satisfaction, we're committed to delivering the highest quality products while minimizing our environmental impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/henry-zhang.jpg" alt="Henry Zhang" class="team-photo">
+                    <h3 class="team-name">Henry Zhang</h3>
+                    <p class="team-role">CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/alan-an.jpg" alt="Alan An" class="team-photo">
+                    <h3 class="team-name">Alan An</h3>
+                    <p class="team-role">CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/chaos-zhang.jpg" alt="Chaos Zhang" class="team-photo">
+                    <h3 class="team-name">Chaos Zhang</h3>
+                    <p class="team-role">COO</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/kow-wang.jpg" alt="Kow Wang" class="team-photo">
+                    <h3 class="team-name">Kow Wang</h3>
+                    <p class="team-role">Head of Operations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@venturelinefoods.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Address: 123 Food Street, San Francisco, CA 94105</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ventureline Foods. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
