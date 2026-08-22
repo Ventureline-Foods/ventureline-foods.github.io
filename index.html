@@ -202,7 +202,7 @@
         
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: var(--spacing-lg);
         }
         
@@ -219,6 +219,11 @@
         
         .team-member {
             text-align: center;
+            transition: transform 0.25s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-4px);
         }
         
         .team-photo {
@@ -234,6 +239,23 @@
             font-size: 3rem;
             color: #a1a1a6;
             margin: 0 auto var(--spacing-md);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.25s ease;
+        }
+
+        .team-member:hover .team-photo {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .team-member,
+            .team-photo {
+                transition: none;
+            }
+
+            .team-member:hover {
+                transform: none;
+            }
         }
         
         .team-name {
@@ -540,6 +562,13 @@
                     <img src="assets/pexels-photo-10919461.jpeg" alt="Kow Wang" class="team-photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto var(--spacing-md);">
                     <h3 class="team-name">Kow Wang</h3>
                     <p class="team-role">Head of Security</p>
+                </div>
+
+                <!-- CAIO -->
+                <div class="team-member">
+                    <img src="assets/hcoa-lee.jpg" alt="Hcoa Lee" class="team-photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto var(--spacing-md);">
+                    <h3 class="team-name">Hcoa Lee</h3>
+                    <p class="team-role">Chief AI Officer</p>
                 </div>
             </div>
         </div>
