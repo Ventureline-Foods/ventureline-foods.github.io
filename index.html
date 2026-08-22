@@ -488,6 +488,76 @@
             line-height: 1.7;
         }
 
+        .updates-archive {
+            margin-top: 82px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, .3);
+        }
+
+        .archive-heading {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 28px;
+            margin-bottom: 28px;
+        }
+
+        .archive-heading h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            letter-spacing: -.02em;
+        }
+
+        .archive-heading p {
+            margin: 0;
+            color: rgba(255, 255, 255, .54);
+            font-size: .9rem;
+        }
+
+        .archive-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .18);
+        }
+
+        .archive-item {
+            display: grid;
+            grid-template-columns: 116px 1fr;
+            gap: 18px;
+            padding: 24px 28px 24px 0;
+            border-top: 1px solid rgba(255, 255, 255, .18);
+        }
+
+        .archive-item:nth-child(even) {
+            padding-right: 0;
+            padding-left: 28px;
+            border-left: 1px solid rgba(255, 255, 255, .18);
+        }
+
+        .archive-item time {
+            color: rgba(255, 255, 255, .48);
+            font-size: .74rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+        }
+
+        .archive-item h4 {
+            margin: -3px 0 7px;
+            font-size: 1rem;
+            line-height: 1.35;
+        }
+
+        .archive-item p {
+            margin: 0;
+            color: rgba(255, 255, 255, .58);
+            font-size: .9rem;
+            line-height: 1.6;
+        }
+
         .approach {
             background: var(--warm);
         }
@@ -850,6 +920,29 @@
                 margin-top: 54px;
             }
 
+            .updates-archive {
+                margin-top: 64px;
+            }
+
+            .archive-heading {
+                display: block;
+            }
+
+            .archive-heading p {
+                margin-top: 8px;
+            }
+
+            .archive-list {
+                grid-template-columns: 1fr;
+            }
+
+            .archive-item,
+            .archive-item:nth-child(even) {
+                grid-template-columns: 100px 1fr;
+                padding: 22px 0;
+                border-left: 0;
+            }
+
             .capability h3 {
                 margin-top: 22px;
             }
@@ -1005,6 +1098,42 @@
                         <h3>Concept workshops expand across the team</h3>
                         <p>Cross-functional workshops now bring product, technology, AI, and operational perspectives into the earliest stages of food concept development.</p>
                     </article>
+                </div>
+                <div class="updates-archive reveal" aria-labelledby="archive-title">
+                    <div class="archive-heading">
+                        <h3 id="archive-title">Earlier work</h3>
+                        <p>A record of how the work has evolved since early 2025.</p>
+                    </div>
+                    <ol class="archive-list">
+                        <li class="archive-item">
+                            <time datetime="2025-05-03">May 3, 2025</time>
+                            <div>
+                                <h4>Product-format exploration gets underway</h4>
+                                <p>The team opened a structured exploration of food formats centered on everyday use, taste, and practical handling.</p>
+                            </div>
+                        </li>
+                        <li class="archive-item">
+                            <time datetime="2025-04-24">April 24, 2025</time>
+                            <div>
+                                <h4>Collaborative development model takes shape</h4>
+                                <p>A working model began bringing product and operational perspectives into the same early-stage decisions.</p>
+                            </div>
+                        </li>
+                        <li class="archive-item">
+                            <time datetime="2025-04-10">April 10, 2025</time>
+                            <div>
+                                <h4>Sustainability joins concept reviews</h4>
+                                <p>Reviews expanded to consider packaging efficiency, ingredient choices, and practical ways to reduce avoidable material use.</p>
+                            </div>
+                        </li>
+                        <li class="archive-item">
+                            <time datetime="2025-03-20">March 20, 2025</time>
+                            <div>
+                                <h4>Research begins on next-generation food concepts</h4>
+                                <p>The team began documenting early questions around formats, ingredients, and product experiences worth exploring.</p>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </section>
